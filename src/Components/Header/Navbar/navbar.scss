@@ -1,0 +1,50 @@
+@import '../../../sass/mixin.scss';
+@import '../../../sass/variables.scss';
+
+.navbar {
+    background-color: rgba(128, 128, 128, 0.931);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+    ul {
+        display: inline-flex;
+        gap: 50px;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
+
+        a {
+            font-size: 1.2em;
+            font-family: $font-main;
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+
+    img {
+        margin-left: 4%;
+    }
+}
+
+#btn-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 5%;
+}
+
+.btn {
+    align-items: center;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #AB2FFE, #40AFFD) 1;
+    text-align: center;
+    padding: 5px;
+}
+
+.btn:hover {
+    background-color: black;
+}
