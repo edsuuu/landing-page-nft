@@ -37,6 +37,7 @@ header {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        z-index: 3;
     }
 
     #paragraph {
@@ -46,8 +47,9 @@ header {
         color: #FFF;
         font-size: 1.2em;
         line-height: 160%;
-        /* 25.6px */
         z-index: 3;
+
+        
     }
 
     #video-demo {
@@ -72,7 +74,7 @@ header {
 
     img {
         margin-top: 0em;
-        margin-right: 15em;
+        margin-right: 10em;
         width: 555px;
         height: 878px;
         position: relative;
