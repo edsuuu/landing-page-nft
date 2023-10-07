@@ -2,15 +2,21 @@
 @import '../../../sass/variables.scss';
 
 .navbar {
-    background-color: rgba(128, 128, 128, 0.262);
-    display: flex;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(25px);
+    @include flex;
     justify-content: space-between;
     position: fixed;
     width: 100%;
     z-index: 3;
+    border-bottom: 1px solid white;
 
+    img {
+        margin-left: 6%;
+    }
+    
     ul {
-        display: inline-flex;
+        display: flex;
         gap: 50px;
         align-items: center;
         list-style: none;
@@ -21,30 +27,37 @@
             font-family: $font-main;
             color: white;
             text-decoration: none;
+            position: relative;
         }
     }
 
-
-    img {
-        margin-left: 6%;
+    a::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 5px;
+        top: 25px;
+        bottom: 0;
+        left: 0;
+        background-color: #06ffeef8;
+        transition: width 0.5s ease;
     }
+
+    a:hover::before {
+        color: #06ffeef8;
+        width: 100%;
+    }
+
+    a:hover{
+        color:#06ffeef8;
+    }
+
+    #btn-container {
+        @include flex;
+        justify-content: flex-end;
+        margin-right: 6%;
+        gap: 10px;
+    }
+
 }
 
-#btn-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-right: 7%;
-}
-
-.btn {
-    align-items: center;
-    border: 2px solid;
-    border-image: linear-gradient(to right, #AB2FFE, #40AFFD) 1;
-    text-align: center;
-    padding: 5px;
-}
-
-.btn:hover {
-    background-color: black;
-}

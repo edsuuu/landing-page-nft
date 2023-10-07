@@ -17,9 +17,37 @@ header {
 
 }
 
+.elipse {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(128, 0, 128, 0.4);
+    border-radius: 50%;
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    background: linear-gradient(180deg, #fb03f7ed 0%, #AA9CFF 100%);
+    filter: blur(100px);
+    box-shadow: 0 0 0 20px rgba(128, 0, 128, 0.5);
+}
+
+.elipse-2 {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(128, 0, 128, 0.4);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    z-index: 0;
+    background: linear-gradient(262deg, #7000FF 4.87%, #06ffee40 87.02%);
+    filter: blur(150px);
+    box-shadow: 0 0 0 20px rgba(128, 0, 128, 0.2);
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .header-content-left {
@@ -27,9 +55,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 1;
 
     #text-box-main {
-        margin: 1em 0em -5em 2em;
+        margin: 1em 0em -3em;
         width: 627px;
         font-family: Jura, sans-serif;
         font-size: 2.3em;
@@ -37,42 +66,52 @@ header {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        z-index: 3;
+        
     }
 
     #paragraph {
-        margin-left: 4em;
+      
         width: 800px;
         font-family: $font-main;
         color: #FFF;
         font-size: 1.2em;
         line-height: 160%;
-        z-index: 3;
-
-        
+        z-index: 1;
     }
 
     #video-demo {
         display: flex;
-        color: #FFF;
-        margin: -12em 0em -2em 2em;
-        border: 1px solid white;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 3;
+        width: 500px;
+
+        #icon {
+            flex: 0 0 auto;
+            margin-right: 20px;
+           
+            img {
+                width: 40px;
+            }
+        }
 
         h2 {
             font-family: $font-title-two;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            
         }
-
+    
         p {
-            font-family: $font-main;
+            font-family: $font-title-two;
             font-size: 1em;
-            line-height: normal;
         }
     }
 }
 
 .header-content-right {
-    z-index: auto;
-
+    z-index: 1;
     img {
         margin-top: 0em;
         margin-right: 10em;
