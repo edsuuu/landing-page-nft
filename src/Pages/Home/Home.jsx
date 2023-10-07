@@ -10,6 +10,7 @@ export class Home extends Component {
       <>
         <Header />
         <MainContent />
+        
       </>
     );
   }

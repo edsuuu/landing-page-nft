@@ -1,3 +1,71 @@
+@import '../../sass/mixin.scss';
+@import '../../sass/variables.scss';
+
 main {
-    color:  white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .main-title {
+        font-family: $font-main;
+        margin-top: 180px;
+
+        color: white;
+        position: relative;
+        /* Adicione position: relative; ao container para usar position: absolute; nos filhos */
+
+        h1 {
+            position: relative;
+            /* Certifique-se de que o texto também tenha uma posição relativa */
+            z-index: 2;
+            /* Defina um valor de z-index maior para o texto */
+        }
+
+        #circle {
+            position: absolute;
+            transform: translate(-30%, -30%);
+            /* Ajuste a posição conforme necessário */
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            backdrop-filter: blur(15px);
+            border-radius: 50%;
+            z-index: 1;
+            /* Defina um valor de z-index menor para a elipse para que fique atrás do texto */
+        }
+    }
+
+    .mapa {
+        #ReLeft {
+            position: absolute;
+            top: 140%;
+            img{
+                width: 100px;
+            }
+        }
+
+        #ReRight {
+            margin: auto;
+            img{
+                width: 100px;
+            }
+        }
+
+        img {
+            margin-top: 80px;
+            width: 1200px;
+
+        }
+    }
+
+    .button-container {
+        margin-top: 60px;
+
+        .main-btn {
+            color: white;
+            width: 200px;
+        }
+    }
+
 }

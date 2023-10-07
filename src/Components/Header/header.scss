@@ -9,12 +9,13 @@ header {
     background-size: cover;
     background-position: bottom;
     width: 100vw;
+
     #bg-gradient {
         position: absolute;
         top: 0;
         left: 0;
     }
-
+    
 }
 
 .elipse {
@@ -48,6 +49,7 @@ header {
     display: flex;
     justify-content: space-between;
     z-index: 1;
+    animation: go-back 2s;
 }
 
 .header-content-left {
@@ -66,11 +68,11 @@ header {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        
+
     }
 
     #paragraph {
-      
+
         width: 800px;
         font-family: $font-main;
         color: #FFF;
@@ -87,10 +89,12 @@ header {
         z-index: 3;
         width: 500px;
 
+
         #icon {
             flex: 0 0 auto;
             margin-right: 20px;
-           
+
+
             img {
                 width: 40px;
             }
@@ -100,9 +104,9 @@ header {
             font-family: $font-title-two;
             font-size: 1.3em;
             margin-bottom: 10px;
-            
+
         }
-    
+
         p {
             font-family: $font-title-two;
             font-size: 1em;
@@ -112,6 +116,7 @@ header {
 
 .header-content-right {
     z-index: 1;
+
     img {
         margin-top: 0em;
         margin-right: 10em;
@@ -122,5 +127,14 @@ header {
         right: 0;
         top: 0%;
 
+    }
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
