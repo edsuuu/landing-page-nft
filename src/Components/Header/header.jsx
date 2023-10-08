@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./Navbar/navbar";
 import Hand from "./img/image.png";
 import Icon from "./img/icon.svg";
-// import bg from "./img/bg.png";
+
 import "./header.scss";
 
 export class Header extends Component {
@@ -18,7 +18,7 @@ export class Header extends Component {
       <>
         <header>
           <Navbar links={links} />
-          {/* <img id="bg-gradient" src={bg} alt="bg" /> */}
+
           <div class="elipse"></div>
           <div class="elipse-2"></div>
           <div className="header-container">

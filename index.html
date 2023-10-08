@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Quadrado com Canto Apagado</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quadrado {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #3498db;
+}
+
+.canto-superior-esquerdo,
+.canto-inferior-esquerdo,
+.canto-inferior-direito {
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    position: absolute;
+}
+
+.canto-superior-esquerdo {
+    top: 0;
+    left: 0;
+}
+
+.canto-inferior-esquerdo {
+    bottom: 0;
+    left: 0;
+}
+
+.canto-inferior-direito {
+    bottom: 0;
+    right: 0;
+}
+
+.canto-superior-direito {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-left: 20px solid #3498db;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="quadrado">
+        <div class="canto-superior-esquerdo"></div>
+
+        <div class="canto-inferior-esquerdo"></div>
+        <div class="canto-inferior-direito"></div>
+    </div>
+</body>
+</html>
