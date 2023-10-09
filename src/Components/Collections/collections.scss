@@ -2,12 +2,12 @@
     margin-top: 180px;
     display: flex;
     justify-content: center;
+    gap: 30px;
     flex-direction: row;
 
     .col-img {
         width: 600px;
     }
-
 }
 
 .collection-right {
@@ -42,13 +42,15 @@
         font-size: 1.4em;
         margin-bottom: -50px;
     }
+
     #col-btn {
         margin-left: 50px;
         align-self: flex-start;
         border: 1px solid white;
-        button{
-          color: white;
-          width: 200px;
-       }
+
+        button {
+            color: white;
+            width: 200px;
+        }
     }
 }
