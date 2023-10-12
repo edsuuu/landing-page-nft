@@ -18,7 +18,7 @@ export class ArticleTwo extends Component {
           </div>
 
           <div id="article-two-box">
-            <div id="card-carteira">
+            <div id="box-carteira">
               <img src={carteira} alt="carteira" />
               <h1>Configure sua carteira</h1>
               <p>
@@ -27,7 +27,7 @@ export class ArticleTwo extends Component {
                 Saiba mais sobre as carteiras que apoiamos.
               </p>
             </div>
-            <div id="card-bolsa">
+            <div id="box-bolsa">
               <img src={bolsa} alt="bolsa" />
               <h1>Crie sua coleção</h1>
               <p>
@@ -36,7 +36,7 @@ export class ArticleTwo extends Component {
                 defina uma taxa de vendas secundária.
               </p>
             </div>
-            <div id="card-galeria">
+            <div id="box-galeria">
               <img src={galeria} alt="galeria" />
               <h1>Adicione seus NFTs</h1>
               <p>
@@ -45,7 +45,7 @@ export class ArticleTwo extends Component {
                 propriedades, estatísticas e conteúdo desbloqueável.
               </p>
             </div>
-            <div id="card-triangulo">
+            <div id="box-triangulo">
               <img src={triangulo} alt="triangulo" />
               <h1>Liste-os para venda</h1>
               <p>
