@@ -22,7 +22,6 @@ export class Header extends Component {
           <div class="elipse"></div>
           <div class="elipse-2"></div>
           <div className="header-container">
-            nmp
             <div className="header-content-left">
               <div id="text-box-main">
                 <h1>

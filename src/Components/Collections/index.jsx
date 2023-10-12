@@ -13,6 +13,7 @@ export class Collection extends Component {
       <>
         <div className="container-collection">
           <div className="col-img">
+          <div id="bg-circle"></div>
             <img src={Ancient} alt="Ancient" />
             <img src={Godofwar} alt="Godofwar" />
             <img src={Lostinspace} alt="Lostinspace" />
