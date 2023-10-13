@@ -3,6 +3,7 @@ import Map from "./img/mapa.svg";
 
 import "./maincontent.scss";
 import { Button } from "../Buttons/buttons";
+import { Card } from "./Card";
 
 export class MainContent extends Component {
   render() {
@@ -17,8 +18,8 @@ export class MainContent extends Component {
         </div>
 
         <div className="mapa">
-          <div id="ReLeft">
-           
+          <div id="map-cards">
+            <Card />
           </div>
 
           <div id="world">

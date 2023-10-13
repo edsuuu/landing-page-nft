@@ -1,0 +1,82 @@
+@import '../../../sass/variables.scss';
+
+@mixin flexC {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin divisao-texto {
+    content: " | ";
+    margin: 0 10px;
+    font-size: 3em;
+    color: #ffffff;
+}
+
+.card {
+    display: flex;
+    color: white;
+    background: #312353;
+    width: 265px;
+    padding: 5px;
+    border: 2px solid ;
+    border-radius: 10px;
+
+    #profile {
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        img{
+            margin: 0;
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    #card-description {
+        @include flexC;
+        justify-content: center;
+        gap: 2px;
+        h1{
+            padding: 0px 10px 0px 20px;
+            font-family: $font-main;
+            font-size: 1em;
+        }
+        p{
+            padding: 0px 10px 0px 20px;
+            font-family: $font-main;
+            font-size: 1em;
+        }
+    }
+
+    #card-line {
+        @include flexC;
+        @include divisao-texto;
+        justify-self: center;
+        margin-bottom: 10px
+    }
+
+    #card-description-one {
+        @include flexC;
+        justify-content: center;
+        
+        h1{
+            text-align: center;
+            font-family: $font-main;
+            font-size: 1em;
+        }
+        p {
+            font-family: $font-main;
+            font-size: 1em;
+        }
+    }
+
+}
+
+.card {
+    position: absolute;
+    top: 149.7%;
+    left: 14%;
+}
