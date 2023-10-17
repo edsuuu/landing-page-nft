@@ -9,7 +9,7 @@ import { Footer } from "../../Components/Footer";
 
 export class Home extends Component {
   render() {
-
+    
     return (
       <>
         <Header />
