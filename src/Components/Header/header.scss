@@ -149,3 +149,14 @@ header {
         transform: translateY(0);
     }
 }
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .header-container{
+        flex-wrap: wrap;
+}
+}
