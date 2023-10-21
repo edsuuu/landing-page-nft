@@ -20,7 +20,7 @@ export class Header extends Component {
           <Navbar links={links} />
 
           <div class="elipse"></div>
-          <div class="elipse-2"></div>
+          {/* <div class="elipse-2"></div> */}
           <div className="header-container">
             <div className="header-content-left">
               <div id="text-box-main">

@@ -13,11 +13,11 @@ export class Home extends Component {
     return (
       <>
         <Header />
-        <MainContent />
+         <MainContent />
         <Collection />
         <ArticleOne />
         <ArticleTwo />
-        <Footer />
+        <Footer /> 
       </>
     );
   }

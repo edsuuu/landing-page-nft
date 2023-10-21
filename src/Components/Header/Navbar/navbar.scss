@@ -3,7 +3,7 @@
 
 .navbar {
     background: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(10px);
     @include flex;
     justify-content: space-between;
     position: sticky;
@@ -59,8 +59,8 @@
     #btn-container {
         @include flex;
         justify-content: flex-end;
-        margin-right: 6%;
         gap: 10px;
+        margin-right: 5em;
     }
 
 }
