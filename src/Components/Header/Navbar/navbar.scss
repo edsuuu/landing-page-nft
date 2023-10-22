@@ -69,11 +69,10 @@
 @media (max-width: 992px) {
   .navbar {
     ul {
-        flex-wrap: nowrap;
+      flex-wrap: nowrap;
     }
   }
 }
-
 
 @media (min-width: 769px) {
   .mobile-nav {
@@ -93,7 +92,7 @@
 
   .handle {
     display: block;
-    margin-right: 30px;
+    margin-right: 20px;
   }
 
   .mobile-nav {
@@ -106,7 +105,6 @@
       text-align: center;
 
       .mobile-li {
-
         border-bottom: 1px solid rgba(255, 255, 255, 0.236);
         padding: 25px;
       }
@@ -117,7 +115,6 @@
     }
 
     #mobile-btn-container {
-
       display: flex;
       justify-content: center;
       gap: 30px;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button } from "../../Buttons/buttons";
+import { Button } from "../../Button/button";
 import bolsa from "./img/bolsa.svg";
 import carteira from "./img/carteira.svg";
 import galeria from "./img/galeria.svg";

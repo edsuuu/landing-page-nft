@@ -120,16 +120,18 @@ header {
   }
 
   .header-content-left {
-    margin-top: 5em;
+    margin-top: 2em;
     margin-left: 5em;
     margin-right: 5em;
 
     #text-box-main {
+      padding: 20px;
       width: 100%;
-      text-align: justify;
+      text-align: center;
     }
 
     #paragraph {
+      padding: 5px;
       width: 100%;
       max-width: 992px;
       text-align: justify;
@@ -144,7 +146,7 @@ header {
     }
     #video-demo {
         margin: auto;
-        width: 400px;
+        width: 300px;
     }
   }
 }
@@ -193,6 +195,14 @@ header {
       width: 100%;
       height: auto;
     }
+  }
+}
+
+
+
+@media (max-width: 525px) {
+  .header-content-left{
+    
   }
 }
 

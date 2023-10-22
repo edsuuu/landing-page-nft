@@ -3,7 +3,7 @@ import Ancient from "./img/ancient.png";
 import Godofwar from "./img/godofwar.png";
 import Lostinspace from "./img/lostinspace.png";
 import Watchers from "./img/watchers.png";
-import { Button } from "../Buttons/buttons";
+import { Button } from "../Button/button";
 import "./collections.scss";
 
 

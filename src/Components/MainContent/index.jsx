@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Map from "./img/mapa.svg";
 
 import "./maincontent.scss";
-import { Button } from "../Buttons/buttons";
+import { Button } from "../Button/button";
 import { Card } from "./Card";
 
 export class MainContent extends Component {
