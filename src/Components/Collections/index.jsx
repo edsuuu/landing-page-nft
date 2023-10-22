@@ -11,20 +11,26 @@ export class Collection extends Component {
     return (
       <>
         <div className="container-collection">
-
+          <div id="bg-circle"></div> {/* background da colection img */}
           <div className="collection-img">
-            <img src={Ancient} alt="Ancient" />
-            <img src={Godofwar} alt="Godofwar" />
-            <img src={Lostinspace} alt="Lostinspace" />
-            <img src={Watchers} alt="Watchers" />
+            <div className="image">
+              <img src={Ancient} alt="Ancient" />
+            </div>
+            <div className="image">
+              <img src={Godofwar} alt="Godofwar" />
+            </div>
+            <div className="image">
+              <img src={Lostinspace} alt="Lostinspace" />
+            </div>
+            <div className="image">
+              <img src={Watchers} alt="Watchers" />
+            </div>
           </div>
-
           <div className="collection-right">
-            <div id="col-title">
+            <div className="col-title">
               <div id="col-circle"></div>
-              <div>
-                <h1>Última coleção NFT</h1>
-              </div>
+
+              <h1>Última coleção NFT</h1>
             </div>
             <div id="col-paragraph">
               <p>
@@ -34,7 +40,7 @@ export class Collection extends Component {
               </p>
             </div>
             <div id="col-btn">
-              <Button className="btncol" text="Ver todos Coletores" />
+              <Button text="Ver todos Coletores" />
             </div>
           </div>
         </div>
