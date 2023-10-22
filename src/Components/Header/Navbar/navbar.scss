@@ -65,3 +65,28 @@
 
 }
 
+.handle {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    #btn-container{
+        margin-right: 1em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    .handle {
+        display: block;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    .handle {
+        display: block;
+    }
+}
