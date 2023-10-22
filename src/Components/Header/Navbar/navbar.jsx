@@ -11,15 +11,16 @@ const Nav = ({ links }) => {
 
   const handleResize = () => {
     if (window.innerWidth > 768) {
-      setClick(false); 
+      setClick(false)
+      
+      ; 
     }
   };
 
   useEffect(() => {
 
     window.addEventListener("resize", handleResize);
-
-
+    
     return () => {
       window.removeEventListener("resize", handleResize);
     };

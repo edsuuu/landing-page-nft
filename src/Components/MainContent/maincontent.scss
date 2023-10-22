@@ -1,71 +1,68 @@
-@import '../../sass/mixin.scss';
-@import '../../sass/variables.scss';
+@import "../../sass/mixin.scss";
+@import "../../sass/variables.scss";
 
 main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  background-color: #c676ff27;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
-    .main-title {
-        font-family: $font-main;
-        margin-top: 180px;
+  .main-title {
+    font-family: $font-main;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: white;
+    position: relative;
+    /* Adicione position: relative; ao container para usar position: absolute; nos filhos */
 
-        color: white;
-        position: relative;
-        /* Adicione position: relative; ao container para usar position: absolute; nos filhos */
-
-        h1 {
-            position: relative;
-            /* Certifique-se de que o texto também tenha uma posição relativa */
-            z-index: 2;
-            /* Defina um valor de z-index maior para o texto */
-        }
-
-        #circle {
-            position: absolute;
-            transform: translate(-30%, -30%);
-            /* Ajuste a posição conforme necessário */
-            width: 100px;
-            height: 100px;
-            background-color: purple;
-            backdrop-filter: blur(15px);
-            border-radius: 50%;
-            z-index: 1;
-            /* Defina um valor de z-index menor para a elipse para que fique atrás do texto */
-        }
+    h1 {
+      font-size: 2em;
+      position: relative;
+      z-index: 2;
     }
 
-    .mapa {
-        #ReLeft {
-            position: absolute;
-            top: 140%;
-            img{
-                width: 100px;
-            }
-        }
-
-        #ReRight {
-            margin: auto;
-            img{
-                width: 100px;
-            }
-        }
-
-        img {
-            margin-top: 50px;
-            width: 1200px;
-
-        }
+    #circle {
+      position: absolute;
+      transform: translate(-30%, -30%);
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(180deg, #6147f8 0%, #bc5eff 100%);
+      border-radius: 50%;
+      z-index: 1;
     }
+  }
 
-    .button-container {
-        margin-top: 50px;
-
-        .main-btn {
-            color: white;
-            width: 200px;
-        }
+  .mapa {
+    #map-cards {
+      position: absolute;
+      top: 170%;
+      left: 14%;
     }
+    #world {
+      img {
+        max-width: 1200px;
+        width: 100%;
+      }
+    }
+  }
 
+  .button-container {
+    padding: 50px;
+
+    .main-btn {
+      color: white;
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mapa {
+    #map-cards {
+      position: absolute;
+      top: 120%;
+      left: 14%;
+    }
+  }
 }
