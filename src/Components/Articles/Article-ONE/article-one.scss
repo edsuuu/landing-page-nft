@@ -1,4 +1,75 @@
+@import "../../../sass/variables.scss";
+
+
+
+// tirar o padding do paragrafo 
+
+
 .article-one {
-    background-color: gray;
-    
+  background-color: rgba(0, 0, 0, 0.877);
+  margin-right: 50px;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+  border: 2px solid white;
+  border-left: none;
+  display: flex;
+  gap: 150px;
+
+  .article-bg-one {
+    margin: 50px;
+    padding-left: 50px;
+    color: white;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    .article-one-title {
+      h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-family: $font-main;
+        text-align: center;
+        font-size: 2em;
+      }
+      #circle-bg {
+        position: absolute;
+        transform: translate(60%, 1%);
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(180deg, #6147f8 0%, #bc5eff 100%);
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+
+    #article-paragraph {
+      font-family: $font-title-two;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: justify;
+      font-size: 1.1em;
+      color: #80ab9e;
+    }
+  }
+
+  .article-bg-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    border: 1px solid white;
+    width: 500px;
+
+    .square {
+      color: white;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+  }
 }
