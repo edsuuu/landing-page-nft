@@ -25,11 +25,11 @@ export class Header extends Component {
             <div className="header-content-left">
               <div id="text-box-main">
                 <h1>
-                  Tenha Calma & <br />
+                  Tenha Calma &
                   Colete suas NFTs.
                 </h1>
               </div>
-
+              
               <div id="paragraph">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -38,7 +38,9 @@ export class Header extends Component {
                   orci eu lobortis pulvinar.
                 </p>
               </div>
-
+              <div className="hand">
+                <img src={Hand} alt="hand" />
+              </div>
               <div id="video-demo">
                 <div id="icon">
                   <img src={Icon} alt="Icon" />

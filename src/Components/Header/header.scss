@@ -6,7 +6,6 @@ header {
   background-size: cover;
   background-position: bottom;
   width: 100vw;
-  height: 100vh;
 
   #bg-gradient {
     position: absolute;
@@ -45,19 +44,21 @@ header {
 .header-container {
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 1;
 }
 
 .header-content-left {
   margin-top: 7em;
   margin-left: 5em;
+  margin-right: 2em;
   display: flex;
   flex-direction: column;
   gap: 85px;
   z-index: 1;
 
   #text-box-main {
+    width: 500px;
     font-family: Jura, sans-serif;
     font-size: 1.8em;
     background: linear-gradient(180deg, #e6b9ff 4%, #9e89ff 100%);
@@ -76,7 +77,6 @@ header {
   }
 
   #video-demo {
-
     display: flex;
     align-items: center;
     color: white;
@@ -105,15 +105,97 @@ header {
 }
 
 .header-content-right {
-  margin-right: 60px;
- 
+  margin-right: 10px;
+
   img {
     max-width: 500px;
     height: 778px;
-
-    
   }
 }
+
+
+@media (max-width: 992px) {
+  .header-content-right {
+    display: none;
+  }
+
+  .header-content-left {
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+
+    #text-box-main {
+      width: 100%;
+      text-align: justify;
+    }
+
+    #paragraph {
+      width: 100%;
+      max-width: 992px;
+      text-align: justify;
+    }
+
+    .hand{
+        margin: auto;
+        img{
+            margin: auto;
+            width: 100%;
+        }
+    }
+    #video-demo {
+        margin: auto;
+        width: 400px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .hand {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 1200px) {
+  .header-content-left {
+    padding-bottom: 50px;
+    #video-demo {
+      display: flex;
+      align-items: center;
+      color: white;
+      z-index: 3;
+
+      #icon {
+        width: 47px;
+        margin-right: 20px;
+
+        img {
+          width: 37px;
+        }
+      }
+
+      h2 {
+        font-family: $font-title-two;
+        font-size: 1em;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-family: $font-title-two;
+        font-size: 0.9em;
+      }
+    }
+  }
+  .header-content-right {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 
 // @keyframes go-back {
 //     0% {
@@ -132,9 +214,3 @@ header {
 //     }
 // }
 
-
-@media (max-width: 992px) {
-    .header-container{
-        flex-wrap: wrap;
-    }
-}
