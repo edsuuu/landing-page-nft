@@ -93,27 +93,62 @@
   .handle {
     display: block;
     margin-right: 20px;
+    width: 70px;
+    transition: 0.3s;
+    span {
+      transition: transform 0.3s ease; /* Adicione a transição à tag 'span' */
+      display: inline-block;
+    }
+
+    span.active {
+      transform: rotate(90deg); /* Aplique a transformação ao ícone 'FaTimes' */
+    }
   }
 
+ 
+  @keyframes slideDown {
+    0% {
+      max-height: 0;
+    }
+    100% {
+      max-height: 400px; /* Ou qualquer valor desejado */
+    }
+  }
+  
+  // @keyframes slideUp {
+  //   100% {
+  //     max-height: 400px; /* Ou qualquer valor desejado */
+  //   }
+
+  //   0% {
+  //     max-height: 0;
+  //   }
+  // }
+  
   .mobile-nav {
     width: 100%;
     background-color: #160e2a;
     position: absolute;
     top: 80px;
+
+    overflow: hidden;
+    animation: slideDown 0.5s ease-in-out; /* Use o keyframe slideDown para a animação */
+    transition: height 0.3s ease; /* Adicione uma transição para a altura também */
+  
     .mobile-ul {
       display: block;
       text-align: center;
-
+  
       .mobile-li {
         border-bottom: 1px solid rgba(255, 255, 255, 0.236);
         padding: 25px;
       }
-
+  
       .mobile-li:hover {
         background-color: #46376c;
       }
     }
-
+  
     #mobile-btn-container {
       display: flex;
       justify-content: center;
@@ -122,4 +157,12 @@
       padding-bottom: 30px;
     }
   }
+  
+  .mobile-nav.active {
+    max-height: 300px; /* Ajuste o max-height para o valor desejado */
+    animation: none;
+    
+  }
+
+  
 }

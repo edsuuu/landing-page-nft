@@ -15,7 +15,7 @@ header {
 }
 
 .elipse {
-  width: 500px;
+  width: 60%;
   height: 500px;
   background-color: rgba(128, 0, 128, 0.4);
   border-radius: 50%;
@@ -39,6 +39,7 @@ header {
   background: linear-gradient(262deg, #7000ff 4.87%, #06ffee40 87.02%);
   filter: blur(150px);
   box-shadow: 0 0 0 20px rgba(128, 0, 128, 0.2);
+ 
 }
 
 .header-container {
@@ -55,7 +56,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 85px;
-  z-index: 1;
+  z-index: 2;
 
   #text-box-main {
     width: 500px;
@@ -85,6 +86,8 @@ header {
     #icon {
       width: 47px;
       margin-right: 20px;
+      filter: drop-shadow(1px 2px 8px rgba(255, 255, 255, 0.29));
+      
 
       img {
         width: 37px;
@@ -106,12 +109,15 @@ header {
 
 .header-content-right {
   margin-right: 10px;
-
+  z-index: 2;
   img {
     max-width: 500px;
     height: 778px;
+
+    
   }
 }
+
 
 
 @media (max-width: 992px) {
@@ -123,11 +129,13 @@ header {
     margin-top: 2em;
     margin-left: 5em;
     margin-right: 5em;
+    gap: 45px;
 
     #text-box-main {
-      padding: 20px;
+      padding: 5px;
+      font-size: 1.3em;
       width: 100%;
-      text-align: center;
+      z-index: 3;
     }
 
     #paragraph {
@@ -142,10 +150,12 @@ header {
         img{
             margin: auto;
             width: 100%;
+            filter: drop-shadow(8px 8px 8px rgba(128, 0, 128, 0.5));
         }
     }
     #video-demo {
         margin: auto;
+        
         width: 300px;
     }
   }
@@ -200,11 +210,6 @@ header {
 
 
 
-@media (max-width: 525px) {
-  .header-content-left{
-    
-  }
-}
 
 
 // @keyframes go-back {

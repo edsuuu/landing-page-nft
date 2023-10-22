@@ -19,7 +19,7 @@ export class MainContent extends Component {
 
         <div className="mapa">
           <div id="map-cards">
-            <Card />
+            {/* <Card /> */}
           </div>
 
           <div id="world">

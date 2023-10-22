@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../img/logo.svg";
@@ -9,25 +9,22 @@ const Nav = ({ links }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
-  const content = (
-    <div className="mobile-nav">
-      
-      <ul className="mobile-ul">
-        {links.map((link, index) => (
-          <li className="mobile-li" key={index}>
-            <a href={link.url} target="_blank" rel="noopener noreferrer">
-              {link.name}
-            </a>
-          </li>
-        ))}
-      </ul>
+  const handleResize = () => {
+    if (window.innerWidth > 768) {
+      setClick(false); 
+    }
+  };
 
-      <div id="mobile-btn-container">
-        <Button id={"btn"} text="Login" />
-        <Button id={"btn"} text="Register" />
-      </div> 
-    </div>
-  );
+  useEffect(() => {
+
+    window.addEventListener("resize", handleResize);
+
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
   return (
     <nav className="navbar">
@@ -45,10 +42,29 @@ const Nav = ({ links }) => {
         <Button id={"btn"} text="Login" />
         <Button id={"btn"} text="Register" />
       </div>
-      {click && content}
       <button className="handle" onClick={handleClick}>
-        {click ? <FaTimes /> : <GiHamburgerMenu size={20} />}
+        <span className={click ? "active" : ""}>
+          {click ? <FaTimes size={20} /> : <GiHamburgerMenu size={20} />}
+        </span>
       </button>
+      {click && (
+        <div className="mobile-nav">
+          <ul className="mobile-ul">
+            {links.map((link, index) => (
+              <li className="mobile-li" key={index}>
+                <a href={link.url} target="_blank" rel="noopener noreferrer">
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <div id="mobile-btn-container">
+            <Button id={"btn"} text="Login" />
+            <Button id={"btn"} text="Register" />
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
