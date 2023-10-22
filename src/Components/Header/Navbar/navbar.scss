@@ -1,92 +1,128 @@
-@import '../../../sass/mixin.scss';
-@import '../../../sass/variables.scss';
+@import "../../../sass/mixin.scss";
+@import "../../../sass/variables.scss";
 
 .navbar {
-    background: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(10px);
-    @include flex;
-    justify-content: space-between;
-    position: sticky;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  @include flex;
+  justify-content: space-between;
+  position: sticky;
+  width: 100%;
+  z-index: 3;
+  border-bottom: 1px solid white;
+
+  img {
+    margin-left: 6%;
+  }
+
+  ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+
+    a {
+      font-size: 1.2em;
+      font-family: $font-main;
+      color: white;
+      text-decoration: none;
+      position: relative;
+      transition: background 0.3s;
+    }
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    top: 25px;
+    bottom: 0;
+    left: 0;
+    background-color: #06ffeef8;
+    transition: width 0.5s ease;
+  }
+
+  a:hover::before {
+    color: #06ffeef8;
     width: 100%;
-    z-index: 3;
-    border-bottom: 1px solid white;
+  }
 
-    img {
-        margin-left: 6%;
-    }
-    
-    ul {
-        display: flex;
-        gap: 50px;
-        align-items: center;
-        list-style: none;
-        text-decoration: none;
+  a:hover {
+    transition: background 0.3s;
+    color: #06ffeef8;
+  }
 
-        a {
-            font-size: 1.2em;
-            font-family: $font-main;
-            color: white;
-            text-decoration: none;
-            position: relative;
-            transition: background .3s;
-
-        }
-    }
-
-    a::before {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 5px;
-        top: 25px;
-        bottom: 0;
-        left: 0;
-        background-color: #06ffeef8;
-        transition: width 0.5s ease;
-
-    }
-
-    a:hover::before {
-        color: #06ffeef8;
-        width: 100%;
-    }
-
-    a:hover{
-        transition: background .3s;
-        color:#06ffeef8;
-    }
-
-    #btn-container {
-        @include flex;
-        justify-content: flex-end;
-        gap: 10px;
-        margin-right: 5em;
-    }
-
+  #btn-container {
+    @include flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 3em;
+  }
 }
 
 .handle {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 992px) {
-    #btn-container{
-        margin-right: 1em;
+  .navbar {
+    ul {
+        flex-wrap: nowrap;
     }
+  }
 }
 
 
-@media (max-width: 768px) {
-    
-    .handle {
-        display: block;
-    }
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
 }
 
-
 @media (max-width: 768px) {
-    
-    .handle {
-        display: block;
+  .navbar {
+    ul {
+      display: none;
     }
+    #btn-container {
+      display: none;
+    }
+  }
+
+  .handle {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .mobile-nav {
+    width: 100%;
+    background-color: #160e2a;
+    position: absolute;
+    top: 80px;
+    .mobile-ul {
+      display: block;
+      text-align: center;
+
+      .mobile-li {
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.236);
+        padding: 25px;
+      }
+
+      .mobile-li:hover {
+        background-color: #46376c;
+      }
+    }
+
+    #mobile-btn-container {
+
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+  }
 }
