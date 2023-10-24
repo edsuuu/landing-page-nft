@@ -17,8 +17,8 @@ export class ArticleTwo extends Component {
             <h1>Crie e venda seus NFTs</h1>
           </div>
 
-          <div id="article-two-box">
-            <div id="box-carteira">
+          <div className="article-two-box">
+            <div id="box">
               <img src={carteira} alt="carteira" />
               <h1>Configure sua carteira</h1>
               <p>
@@ -27,7 +27,7 @@ export class ArticleTwo extends Component {
                 Saiba mais sobre as carteiras que apoiamos.
               </p>
             </div>
-            <div id="box-bolsa">
+            <div id="box">
               <img src={bolsa} alt="bolsa" />
               <h1>Crie sua coleção</h1>
               <p>
@@ -36,7 +36,7 @@ export class ArticleTwo extends Component {
                 defina uma taxa de vendas secundária.
               </p>
             </div>
-            <div id="box-galeria">
+            <div id="box">
               <img src={galeria} alt="galeria" />
               <h1>Adicione seus NFTs</h1>
               <p>
@@ -45,7 +45,7 @@ export class ArticleTwo extends Component {
                 propriedades, estatísticas e conteúdo desbloqueável.
               </p>
             </div>
-            <div id="box-triangulo">
+            <div id="box">
               <img src={triangulo} alt="triangulo" />
               <h1>Liste-os para venda</h1>
               <p>
@@ -55,11 +55,11 @@ export class ArticleTwo extends Component {
               </p>
             </div>
           </div>
-          <img src={linha} alt="linha" />
-          <div id="article-contato">
+          <img src={linha} id="linha" alt="linha" />
+          <div className="article-contato">
             <h1>Pronto para o próximo lançamento de NFT?</h1>
             <input type="text" name="" id="" />
-            <Button className={"article-btn"} text={"Enviar Email"} />
+            <Button text={"Enviar Email"} />
           </div>
         </div>
       </>
