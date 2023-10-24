@@ -1,0 +1,36 @@
+.footer{
+    color: white;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+    .footer-left{
+
+    }
+    .footer-right{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+.footer-terms{
+    margin-left: 50px;
+
+    display: flex;
+    color: white;
+    padding: 15px;
+    justify-content: space-between;
+    .ft-left{
+        display: flex;
+        gap: 50px;
+        #ft-text-right{
+            margin-right: 50px;
+        }
+    }
+}

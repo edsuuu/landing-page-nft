@@ -44,8 +44,10 @@
   }
 
   #linha {
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
   }
 
   .article-contato {
@@ -56,15 +58,15 @@
     gap: 40px;
 
     h1 {
-        margin-top: 2.5em;
+      margin-top: 2.5em;
     }
 
     input {
-
     }
 
     button {
       width: 180px;
+      margin-bottom: 6em;
     }
   }
 }
