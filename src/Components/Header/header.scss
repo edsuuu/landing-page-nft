@@ -39,7 +39,6 @@ header {
   background: linear-gradient(262deg, #7000ff 4.87%, #06ffee40 87.02%);
   filter: blur(150px);
   box-shadow: 0 0 0 20px rgba(128, 0, 128, 0.2);
- 
 }
 
 .header-container {
@@ -87,7 +86,6 @@ header {
       width: 47px;
       margin-right: 20px;
       filter: drop-shadow(1px 2px 8px rgba(255, 255, 255, 0.29));
-      
 
       img {
         width: 37px;
@@ -113,12 +111,8 @@ header {
   img {
     max-width: 500px;
     height: 778px;
-
-    
   }
 }
-
-
 
 @media (max-width: 992px) {
   .header-content-right {
@@ -145,18 +139,16 @@ header {
       text-align: justify;
     }
 
-    .hand{
+    .hand {
+      margin: auto;
+      img {
         margin: auto;
-        img{
-            margin: auto;
-            width: 100%;
-            filter: drop-shadow(8px 8px 8px rgba(128, 0, 128, 0.5));
-        }
+        width: 100%;
+        filter: drop-shadow(8px 8px 8px rgba(128, 0, 128, 0.5));
+      }
     }
     #video-demo {
-        margin: auto;
-        
-        
+      margin: auto;
     }
   }
 }
@@ -208,10 +200,9 @@ header {
   }
 }
 
-@media (max-width:1235px) {
-  .header-container{
-
-    .header-content-left{
+@media (max-width: 1235px) {
+  .header-container {
+    .header-content-left {
       margin-top: 85px;
       gap: 60px;
       h1 {
@@ -224,16 +215,15 @@ header {
       p {
         font-family: $font-title-two;
         font-size: 0.9em;
-        
       }
       #video-demo {
-        p{
+        p {
           width: 350px;
         }
       }
     }
-    .header-content-right{
-      img{
+    .header-content-right {
+      img {
         margin-right: 45px;
         margin-bottom: 50px;
         height: 600px;
@@ -241,8 +231,6 @@ header {
     }
   }
 }
-
-
 
 // @keyframes go-back {
 //     0% {
@@ -260,4 +248,3 @@ header {
 //         transform: translateY(0);
 //     }
 // }
-
