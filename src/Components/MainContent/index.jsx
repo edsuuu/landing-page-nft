@@ -3,7 +3,7 @@ import Map from "./img/mapa.svg";
 
 import "./maincontent.scss";
 import { Button } from "../Button/button";
-// import { Card } from "./Card";
+import { Card } from "./Card";
 
 export class MainContent extends Component {
   render() {
@@ -18,7 +18,7 @@ export class MainContent extends Component {
 
         <div className="mapa">
           <div id="map-cards">
-            {/* <Card />  */} 
+            <Card />  
           </div>
 
           <div id="world">

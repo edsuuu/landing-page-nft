@@ -114,6 +114,9 @@ header {
   }
 }
 
+
+
+
 @media (max-width: 992px) {
   .header-content-right {
     display: none;
@@ -200,37 +203,7 @@ header {
   }
 }
 
-@media (max-width: 1235px) {
-  .header-container {
-    .header-content-left {
-      margin-top: 85px;
-      gap: 60px;
-      h1 {
-        font-family: $font-title;
-        font-size: 2em;
-        width: 90%;
-        margin-bottom: 10px;
-      }
 
-      p {
-        font-family: $font-title-two;
-        font-size: 0.9em;
-      }
-      #video-demo {
-        p {
-          width: 350px;
-        }
-      }
-    }
-    .header-content-right {
-      img {
-        margin-right: 45px;
-        margin-bottom: 50px;
-        height: 600px;
-      }
-    }
-  }
-}
 
 // @keyframes go-back {
 //     0% {
