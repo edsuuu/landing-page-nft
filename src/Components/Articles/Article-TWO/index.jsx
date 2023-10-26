@@ -14,7 +14,9 @@ export class ArticleTwo extends Component {
         <div className="article-two">
           <div id="article-two-title">
             <div id="article-bg-clear"></div>
-            <h1>Crie e venda seus NFTs</h1>
+            <div id="article-bg-h1">
+              <h1>Crie e venda seus NFTs</h1>
+            </div>
           </div>
 
           <div className="article-two-box">

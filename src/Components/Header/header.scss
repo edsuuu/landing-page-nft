@@ -124,8 +124,7 @@ header {
 
   .header-content-left {
     margin-top: 2em;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 2em;
     gap: 45px;
 
     #text-box-main {
@@ -136,7 +135,7 @@ header {
     }
 
     #paragraph {
-      padding: 5px;
+      
       width: 100%;
       max-width: 992px;
       text-align: justify;
@@ -150,9 +149,7 @@ header {
         filter: drop-shadow(8px 8px 8px rgba(128, 0, 128, 0.5));
       }
     }
-    #video-demo {
-      margin: auto;
-    }
+    
   }
 }
 
@@ -160,10 +157,14 @@ header {
   .hand {
     display: none;
   }
+  #video-demo{
+    
+  }
 }
 
-@media (max-width: 1024px) {
-}
+
+
+
 
 @media (max-width: 1200px) {
   .header-content-left {
@@ -173,13 +174,14 @@ header {
       align-items: center;
       color: white;
       z-index: 3;
-
+      width: 100%;
       #icon {
         width: 47px;
         margin-right: 20px;
 
         img {
           width: 37px;
+          z-index: 3;
         }
       }
 
@@ -191,7 +193,7 @@ header {
 
       p {
         font-family: $font-title-two;
-        font-size: 0.9em;
+        font-size: 0.7em;
       }
     }
   }
