@@ -60,7 +60,7 @@ export class ArticleTwo extends Component {
           <img src={linha} id="linha" alt="linha" />
           <div className="article-contato">
             <h1>Pronto para o próximo lançamento de NFT?</h1>
-            <input type="text" name="" id="" />
+            <input type="text" name="text" placeholder="Digite seu E-mail" />
             <Button text={"Enviar Email"} />
           </div>
         </div>

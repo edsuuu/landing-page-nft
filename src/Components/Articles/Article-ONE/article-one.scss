@@ -177,6 +177,8 @@
     margin-left: 10%;
   }
   .article-one {
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -213,9 +215,29 @@
   .article-one .article-bg-one .article-one-title #circle-bg {
     margin-left: 0%;
   }
+
+  .article-one {
+    .article-bg-one {
+    
+
+      .article-one-title {
+        h1 {
+          font-size: 1.6em;
+        }
+      }
+      .article-bg-two {
+        margin-top: 50px;
+        width: 456px;
+      }
+    }
+  }
+
 }
 @media (max-width: 460px) {
   .article-one .article-bg-one .article-one-title #circle-bg {
     display: none;
   }
+
+  
+  
 }
