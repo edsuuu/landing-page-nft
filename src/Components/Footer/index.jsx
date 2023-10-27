@@ -28,7 +28,7 @@ export class Footer extends Component {
     return (
       <>
         <div className="footer">
-          <div className="footer-leff">
+          <div className="footer-left">
             <img src={logoG} alt="" />
             <h3>Mercado NFT incrível, autêntico e único criação digital.</h3>
             <div id="icon-links">
@@ -42,21 +42,21 @@ export class Footer extends Component {
           <div className="footer-right">
             <div id="footer-col-one">
               <h1>Marketplace</h1>
-              <FooterLink links={Marketplace} />
+              <FooterLink links={Marketplace} id="ft-link" />
             </div>
             <div id="footer-col-two">
               <h1>Recursos</h1>
-              <FooterLink links={Recursos} />
+              <FooterLink links={Recursos} id="ft-link" />
             </div>
             <div id="footer-col-tree">
               <h1>Empresa</h1>
-              <FooterLink links={Empresa} />
+              <FooterLink links={Empresa} id="ft-link" />
             </div>
           </div>
         </div>
 
         <div className="footer-terms">
-          <div>
+          <div className="copy">
             <h3>Copyright 2022 safira, todos os direitos reservados.</h3>
           </div>
 

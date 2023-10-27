@@ -1,36 +1,107 @@
-.footer{
-    color: white;
-    border-top: 1px solid white;
+@import "../../sass/variables.scss";
+
+.footer {
+  padding: 50px;
+  color: white;
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .footer-left {
     display: flex;
+    justify-items: center;
+    flex-direction: column;
+    gap: 50px;
+    h3 {
+      font-family: $font-main;
+    }
+    
+    img {
+      width: 110px;
+    }
+  }
+  .footer-right {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 700px;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
-
-
-    .footer-left{
-
+    #footer-col-one {
+        width: 170px;
+      font-family: $font-main;
+      h1 {
+        margin-bottom: 30px;
+        font-size: 1.8em;
+      }
     }
-    .footer-right{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    #footer-col-two {
+        width: 170px;
+
+      font-family: $font-main;
+      h1 {
+        margin-bottom: 30px;
+        font-size: 1.8em;
+      }
     }
+    #footer-col-tree {
+        width: 170px;
 
-
+        font-family: $font-main;
+      h1 {
+        margin-bottom: 30px;
+        font-size: 1.8em;
+      }
+    }
+  }
 }
 
-.footer-terms{
-    margin-left: 50px;
+.footer-link {
+  ul {
+    list-style: none;
 
+    li {
+      line-height: 40px;
+      a {
+        color: white;
+        text-decoration: none;
+        transition: .3s;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer-terms {
+  font-family: $font-main;
+  font-size: 1em;
+  margin-left: 50px;
+  display: flex;
+  color: #545c71;
+  padding: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .copy{
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  .ft-left {
     display: flex;
-    color: white;
-    padding: 15px;
-    justify-content: space-between;
-    .ft-left{
-        display: flex;
-        gap: 50px;
-        #ft-text-right{
-            margin-right: 50px;
-        }
+    gap: 50px;
+    h3:hover{
+        text-decoration: underline;
+        cursor: pointer;
     }
+  }
+  #ft-text-right {
+    margin-right: 50px;
+  }
 }
+

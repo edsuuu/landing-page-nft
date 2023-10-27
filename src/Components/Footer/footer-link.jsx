@@ -1,7 +1,7 @@
 import React from "react";
 
 const FooterLink = ({ links }) => (
-  <div id="footer-link">
+  <div className="footer-link">
     <ul>
       {links.map((link, index) => (
         <li key={index}>
