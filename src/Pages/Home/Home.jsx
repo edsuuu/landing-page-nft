@@ -1,24 +1,39 @@
-import React, { Component } from "react";
+import React from "react";
 import "../../sass/main.scss";
+import { Element } from "react-scroll";
 
-import { MainContent } from "../../Components/MainContent";
-import { Collection } from "../../Components/Collections";
-import { ArticleOne } from "../../Components/Articles/Article-ONE";
-import { ArticleTwo } from "../../Components/Articles/Article-TWO";
-import { Footer } from "../../Components/Footer";
 import Header from "../../Components/Header/header";
+import MainContent from "../../Components/MainContent";
+import Collection from "../../Components/Collections";
+import ArticleOne from "../../Components/Articles/Article-ONE";
+import ArticleTwo from "../../Components/Articles/Article-TWO";
+import Footer from "../../Components/Footer";
+import Navbar from "../../Components/Navbar/navbar";
 
-export class Home extends Component {
-  render() {
-    return (
-      <>
-        <Header />
+function Home() {
+  return (
+    <>
+      <Element name="Home">
+        <Navbar />
+      </Element>
+      
+      <Header />
+
+      <Element name="MainContent">
         <MainContent />
+      </Element>
+
+      <Element name="Collection">
         <Collection />
+      </Element>
+
+      <Element name="ArticleOne">
         <ArticleOne />
-        <ArticleTwo />
-        <Footer />
-      </>
-    );
-  }
+      </Element>
+
+      <ArticleTwo />
+      <Footer />
+    </>
+  );
 }
+export default Home;

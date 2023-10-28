@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import logoG from "./img/logo.svg";
 import "./footer-link";
 import "./footer.scss";
 import FooterLink from "./footer-link";
 
-export class Footer extends Component {
-  render() {
+function Footer ()   {
+  
     const Marketplace = [
       { name: "Explorar", url: "#" },
       { name: "NFT", url: "#" },
@@ -73,4 +73,4 @@ export class Footer extends Component {
       </>
     );
   }
-}
+export default Footer;

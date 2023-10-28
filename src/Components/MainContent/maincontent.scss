@@ -2,11 +2,14 @@
 @import "../../sass/variables.scss";
 
 main {
-  background-color: #c676ff27;
+ 
+  // background-color: #c676ff27;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 200px;
+
 
   .main-title {
     font-family: $font-main;
@@ -35,9 +38,8 @@ main {
 
   .mapa {
     #map-cards {
-      position: absolute;
-      top: 170%;
-      left: 14%;
+      display: none;
+      
     }
     #world {
       img {
@@ -58,11 +60,11 @@ main {
 }
 
 @media (max-width: 768px) {
-  .mapa {
-    #map-cards {
-      position: absolute;
-      top: 120%;
-      left: 14%;
-    }
-  }
+  // .mapa {
+  //   #map-cards {
+  //     position: absolute;
+  //     top: 120%;
+  //     left: 14%;
+  //   }
+  // }
 }

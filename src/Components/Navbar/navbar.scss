@@ -1,5 +1,5 @@
-@import "../../../sass/mixin.scss";
-@import "../../../sass/variables.scss";
+@import "../../sass/mixin.scss";
+@import "../../sass/variables.scss";
 
 .navbar {
   background: rgba(255, 255, 255, 0.1);
@@ -13,6 +13,7 @@
 
   img {
     margin-left: 6%;
+    cursor: pointer;
   }
 
   ul {
@@ -40,18 +41,19 @@
     top: 25px;
     bottom: 0;
     left: 0;
-    background-color: #06ffeef8;
+    background-color: rgb(243, 243, 243);
     transition: width 0.5s ease;
   }
 
   a:hover::before {
-    color: #06ffeef8;
+    color: rgb(221, 221, 221);
     width: 100%;
   }
 
   a:hover {
+    cursor: pointer;
     transition: background 0.3s;
-    color: #06ffeef8;
+    color: rgb(221, 221, 221);
   }
 
   #btn-container {
@@ -105,7 +107,6 @@
     }
   }
 
- 
   @keyframes slideDown {
     0% {
       max-height: 0;
@@ -114,7 +115,7 @@
       max-height: 400px; /* Ou qualquer valor desejado */
     }
   }
-  
+
   // @keyframes slideUp {
   //   100% {
   //     max-height: 400px; /* Ou qualquer valor desejado */
@@ -124,7 +125,7 @@
   //     max-height: 0;
   //   }
   // }
-  
+
   .mobile-nav {
     width: 100%;
     background-color: #160e2a;
@@ -134,21 +135,32 @@
     overflow: hidden;
     animation: slideDown 0.5s ease-in-out; /* Use o keyframe slideDown para a animação */
     transition: height 0.3s ease; /* Adicione uma transição para a altura também */
-  
+
     .mobile-ul {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
       text-align: center;
-  
+      width: 100%;
+
       .mobile-li {
+        width: 100vw;
         border-bottom: 1px solid rgba(255, 255, 255, 0.236);
         padding: 25px;
+        text-align: center;
+        a {
+          padding: 25px 120px;
+        }
+
+        a::before {
+          display: none;
+        }
       }
-  
       .mobile-li:hover {
         background-color: #46376c;
       }
     }
-  
+
     #mobile-btn-container {
       display: flex;
       justify-content: center;
@@ -157,12 +169,9 @@
       padding-bottom: 30px;
     }
   }
-  
+
   .mobile-nav.active {
     max-height: 300px; /* Ajuste o max-height para o valor desejado */
     animation: none;
-    
   }
-
-  
 }

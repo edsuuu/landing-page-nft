@@ -24,7 +24,7 @@
   }
   .footer-right {
     display: flex;
-    justify-content: center;
+    margin-left: 30px;
     gap: 80px;
     width: 700px;
     flex-direction: row;
@@ -105,3 +105,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .footer-left {
+
+    h3 {
+      width: 100%;
+    }
+  
+  }
+}

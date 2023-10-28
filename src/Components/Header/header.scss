@@ -7,6 +7,7 @@ header {
   background-position: bottom;
   width: 100vw;
 
+
   #bg-gradient {
     position: absolute;
     top: 0;
@@ -125,6 +126,7 @@ header {
   .header-content-left {
     margin-top: 2em;
     margin-left: 2em;
+
     gap: 45px;
 
     #text-box-main {
@@ -157,9 +159,9 @@ header {
   .hand {
     display: none;
   }
-  #video-demo{
+  // #video-demo{
     
-  }
+  // }
 }
 
 

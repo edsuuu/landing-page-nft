@@ -6,27 +6,21 @@
   #article-two-title {
     display: flex;
     justify-content: center;
-    // margin: auto;
-    // text-align: center;
-    // border: 1px solid white;
-    margin: 100px 30px 50px 40px;
-    // font-family: $font-title;
-    // font-size: 1.4em;
+    margin: 120px auto 120px auto;
     width: 80%;
     text-align: center;
-    // z-index: 3;
-    #article-bg-h1{
+
+    #article-bg-h1 {
       font-family: $font-main;
     }
     #article-bg-clear {
-
       position: absolute;
       transform: translate(-156%, -30%);
       width: 100px;
       height: 100px;
       background: linear-gradient(180deg, #6147f8 0%, #bc5eff 100%);
       border-radius: 50%;
-      z-index: -1; 
+      z-index: -1;
     }
   }
 
@@ -35,7 +29,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
 
-    #box {
+    .box {
       width: 250px;
       display: flex;
       justify-content: center;
@@ -88,12 +82,11 @@
       width: 300px;
       padding: 13px;
       border-radius: 5px;
-      background: rgba(0, 0, 0, 0.40);
+      background: rgba(0, 0, 0, 0.4);
       border: none;
       color: white;
       font-family: $font-title-two;
       font-size: 0.9em;
-  
     }
 
     button {
@@ -103,10 +96,8 @@
   }
 }
 
-
 @media (max-width: 450px) {
   #article-bg-clear {
     margin-left: 60px;
-    
   }
 }

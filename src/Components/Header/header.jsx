@@ -1,23 +1,16 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import Navbar from "./Navbar/navbar";
+
 import Hand from "./img/image.png";
 import Icon from "./img/icon.svg";
 import "./header.scss";
 
 function Header() {
-  const links = [
-    { name: "Mercado", url: "#" },
-    { name: "Sobre", url: "#" },
-    { name: "Recursos", url: "#" },
-    { name: "Contato", url: "#" },
-  ];
-
   useEffect(() => {
-    const ContainerLeft = ScrollReveal();
-    const ContainerRight = ScrollReveal();
+    const Container = ScrollReveal();
+   
 
-    ContainerLeft.reveal(".header-content-left", {
+    Container.reveal("#text-box-main", {
       origin: "top",
       distance: "300px",
       duration: 1000,
@@ -26,7 +19,25 @@ function Header() {
       interval: 200,
     });
 
-    ContainerRight.reveal(".header-content-right ", {
+    Container.reveal("#paragraph", {
+      origin: "left",
+      distance: "300px",
+      duration: 1000,
+      delay: 300,
+      reset: true,
+      interval: 200,
+    });
+
+    Container.reveal("#video-demo", {
+      origin: "bottom",
+      distance: "200px",
+      duration: 1000,
+      delay: 300,
+      reset: true,
+      interval: 200,
+    });
+
+    Container.reveal(".header-content-right ", {
       origin: "right",
       distance: "200px",
       duration: 1000,
@@ -39,8 +50,6 @@ function Header() {
   return (
     <>
       <header>
-        <Navbar links={links} />
-
         <div className="elipse"></div>
         <div className="elipse-2"></div>
         <div className="header-container">
@@ -52,9 +61,9 @@ function Header() {
             <div id="paragraph">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                orci lacus, tempor nec accumsan ac, luctus ut sem. Mauris pretium
-                lacus eget vulputate rhoncus. Vivamus egestas, orci eu lobortis
-                pulvinar.
+                orci lacus, tempor nec accumsan ac, luctus ut sem. Mauris
+                pretium lacus eget vulputate rhoncus. Vivamus egestas, orci eu
+                lobortis pulvinar.
               </p>
             </div>
             <div className="hand">

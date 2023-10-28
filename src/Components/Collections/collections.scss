@@ -1,8 +1,9 @@
 @import "../../sass/variables.scss";
 
 .container-collection {
-  padding-top: 100px;
-  padding-bottom: 100px;
+
+  position: static;
+  padding-bottom: 200px;
   display: flex;
   justify-content: center;
   gap: 30px;
