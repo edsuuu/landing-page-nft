@@ -1,7 +1,7 @@
 @import "../../sass/variables.scss";
 
 .footer {
-  padding: 50px;
+  padding: 30px;
   color: white;
   border-top: 1px solid white;
   display: flex;
@@ -17,10 +17,11 @@
 
     h3 {
       font-family: $font-main;
+      font-size: 1em ;
     }
     
     img {
-      width: 110px;
+      width: 80px;
     }
     #icon-links{
       display: flex;
@@ -35,8 +36,8 @@
         #bi-icon{
           display: flex;
           justify-content: center;
-          width: 35px;
-          height: 35px;
+          width: 30px;
+          height: 30px;
           color: #7D7AD8;
         }
       }
@@ -57,7 +58,7 @@
       font-family: $font-main;
       h1 {
         margin-bottom: 30px;
-        font-size: 1.8em;
+        font-size: 1.5em;
       }
     }
     #footer-col-two {
@@ -66,7 +67,7 @@
       font-family: $font-main;
       h1 {
         margin-bottom: 30px;
-        font-size: 1.8em;
+        font-size: 1.5em;
       }
     }
     #footer-col-tree {
@@ -75,7 +76,7 @@
         font-family: $font-main;
       h1 {
         margin-bottom: 30px;
-        font-size: 1.8em;
+        font-size: 1.5em;
       }
     }
   }
@@ -101,7 +102,7 @@
 
 .footer-terms {
   font-family: $font-main;
-  font-size: 1em;
+  font-size: 0.85em;
   margin-left: 50px;
   display: flex;
   color: #545c71;
