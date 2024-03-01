@@ -13,7 +13,7 @@ Landing Page feita com REACT E SCSS
 
 
 ```bash
-$ git clone https://github.com/edsuuu/landing-page-nft.git
+git clone https://github.com/edsuuu/landing-page-nft.git
 ```
 
 
@@ -27,10 +27,11 @@ $ cd landing-page-nft
 
 
 ```bash
-$ npm install
+npm install
 ```
 ### Iniciar o projeto Local
 
 ```bash
-$ npm start
+npm start
 ```
+
