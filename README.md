@@ -20,7 +20,7 @@ git clone https://github.com/edsuuu/landing-page-nft.git
 ### Acessar a pasta do repositorio
 
 ```bash
-$ cd landing-page-nft
+cd landing-page-nft
 ```
 
 ### Instalar as Dependencias
