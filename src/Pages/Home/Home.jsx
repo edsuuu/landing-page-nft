@@ -16,7 +16,7 @@ function Home() {
       <Element name="Home">
         <Navbar />
       </Element>
-      
+
       <Header />
 
       <Element name="MainContent">
@@ -32,6 +32,7 @@ function Home() {
       </Element>
 
       <ArticleTwo />
+      
       <Footer />
     </>
   );

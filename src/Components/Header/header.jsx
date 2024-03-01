@@ -28,12 +28,21 @@ function Header() {
       interval: 200,
     });
 
+    Container.reveal(".hand", {
+      origin: "right",
+      distance: "300px",
+      duration: 1000,
+      delay: 300,
+      reset: false,
+      interval: 200,
+    });
+
     Container.reveal("#video-demo", {
       origin: "bottom",
       distance: "200px",
       duration: 1000,
-      delay: 300,
-      reset: true,
+      delay: 200,
+      reset: false,
       interval: 200,
     });
 

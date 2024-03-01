@@ -16,7 +16,7 @@ function ArticleOne() {
       distance: "200px",
       duration: 1000,
       delay: 300,
-      reset: true,
+      reset: false,
       interval: 200,
     });
 
@@ -25,7 +25,7 @@ function ArticleOne() {
       distance: "400px",
       duration: 600,
       delay: 300,
-      reset: true,
+      reset: false,
       interval: 200,
     });
     Article.reveal(".square", {
@@ -33,7 +33,7 @@ function ArticleOne() {
       distance: "200px",
       duration: 1000,
       delay: 300,
-      reset: true,
+      reset: false,
       interval: 200,
     });
   }, []);

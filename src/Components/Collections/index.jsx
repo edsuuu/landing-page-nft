@@ -18,7 +18,7 @@ function Collection() {
       distance: "300px",
       duration: 1000,
       delay: 300,
-      reset: true,
+      reset: false,
       interval: 0,
     });
     Collection.reveal("#col-paragraph", {
@@ -26,7 +26,7 @@ function Collection() {
       distance: "300px",
       duration: 1000,
       delay: 300,
-      reset: true,
+      reset: false,
       interval: 0,
     });
     Collection.reveal("#col-btn", {
@@ -34,7 +34,7 @@ function Collection() {
       distance: "400px",
       duration: 1000,
       delay: 400,
-      reset: true,
+      reset: false,
       interval: 0,
     });
 
@@ -44,7 +44,7 @@ function Collection() {
       distance: "600px",
       duration: 400,
       delay: 200,
-      reset: true,
+      reset: false,
       interval: 300,
     });
     

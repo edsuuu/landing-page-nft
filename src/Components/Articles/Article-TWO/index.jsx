@@ -19,7 +19,7 @@ function ArticleTwo() {
       distance: "200px",
       duration: 1000,
       delay: 300,
-      reset: true,
+      reset: false,
       interval: 200,
     });
 
@@ -28,7 +28,7 @@ function ArticleTwo() {
       distance: "300px",
       duration: 1000,
       delay: 300,
-      reset: true,
+      reset: false,
       interval: 200,
     });
     ArticleTwo.reveal("#box-right", {
@@ -36,7 +36,7 @@ function ArticleTwo() {
       distance: "300px",
       duration: 1000,
       delay: 300,
-      reset: true,
+      reset: false,
       interval: 200,
     });
     ArticleTwo.reveal("#contact-title", {
@@ -44,7 +44,7 @@ function ArticleTwo() {
       distance: "300px",
       duration: 1000,
       delay: 300,
-      reset: true,
+      reset: false,
       interval: 200,
     });
     ArticleTwo.reveal("#contact-input", {
@@ -52,7 +52,7 @@ function ArticleTwo() {
       distance: "300px",
       duration: 1000,
       delay: 300,
-      reset: true,
+      reset: false,
       interval: 200,
     });
     ArticleTwo.reveal(".contact-btn", {
@@ -60,7 +60,7 @@ function ArticleTwo() {
       distance: "300px",
       duration: 1000,
       delay: 300,
-      reset: true,
+      reset: false,
       interval: 200,
     });
   }, []);
